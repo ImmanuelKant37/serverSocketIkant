@@ -1,6 +1,6 @@
 //Servidor de Express
 const express  = require('express');
-const https     = require('https');
+const http     = require('http');
 const socketIO = require('socket.io');
 const path     = require('path');
 const Sockets  = require('./sockets');
@@ -13,7 +13,7 @@ class Server {
         this.port =8080;
 
         //Http Server
-        this.server = https.createServer(this.app);
+        this.server = http.createServer(this.app);
       
         //Configuracion del socket server
         this.io = socketIO(this.server, {/* configuraciones */});
