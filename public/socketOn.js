@@ -1,7 +1,7 @@
 //Socket en produccion
-//const socket = io('https://my-socket-midi.herokuapp.com');
+const socket = io('https://my-socket-midi.herokuapp.com');
 //Socket en desarrollo
-const socket = io('http://localhost:8082');
+//const socket = io('https://serversocketkant.netlify.app');
 const formulario = document.querySelector('#miFormulario');
 const mensajes = document.querySelector('#misMensajes');
 const txtMensaje = document.querySelector('#txtMensaje');
