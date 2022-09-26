@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.js" integrity="sha512-9mpsATI0KClwt+xVZfbcf2lJ8IFBAwsubJ6mI3rtULwyM3fBmQFzj0It4tGqxLOGQwGfJdk/G+fANnxfq9/cew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   
+    <title>MiniChat</title>
+</head>
+<body class ="container">
+    <h1 >MiniChat</h1>
+    <hr>
+
+        <form action="" id="miFormulario">
+            <div class="row">
+                <div class="col-8">
+                    <input type="text" name="txtMensaje" id="txtMensaje" placeholder="Mensaje" class="form-control">
+                </div>
+                <div class="col-4">
+                    <button type="submit" class="btn btn-primary">
+                        Enviar
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <div class="row">
+            <div class="col">
+                <ul id="misMensajes" class="mt-2">
+                    <li>Mensajes</li>
+                </ul>
+            </div>
+        </div>
+</body>
+<script src ="socketOn.js"></script>
+</html>
